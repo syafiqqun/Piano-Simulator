@@ -1,0 +1,25 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="white_keys" type="Node2D" parent="."]
+
+[node name="Button" type="Button" parent="."]
+visible = false
+margin_left = 40.0
+margin_top = 360.0
+margin_right = 60.0
+margin_bottom = 440.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+visible = false
+margin_left = 50.0
+margin_top = 360.0
+margin_right = 70.0
+margin_bottom = 410.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

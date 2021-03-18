@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bk_15.ogg-ef2c918168a5188b1fde2861b9a14a14.oggstr"
+
+[deps]
+
+source_file="res://asset/sound_sample/black_key_sounds/bk_15.ogg"
+dest_files=[ "res://.import/bk_15.ogg-ef2c918168a5188b1fde2861b9a14a14.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/wk_11.ogg-49608842d1a9d867b855a4614151c769.oggstr"
+
+[deps]
+
+source_file="res://asset/sound_sample/white_key_sounds/wk_11.ogg"
+dest_files=[ "res://.import/wk_11.ogg-49608842d1a9d867b855a4614151c769.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

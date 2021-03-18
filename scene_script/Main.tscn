@@ -1,0 +1,792 @@
+[gd_scene load_steps=48 format=2]
+
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_1.ogg" type="AudioStream" id=1]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_2.ogg" type="AudioStream" id=2]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_13.ogg" type="AudioStream" id=3]
+[ext_resource path="res://scene_script/Main.gd" type="Script" id=4]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_10.ogg" type="AudioStream" id=5]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_11.ogg" type="AudioStream" id=6]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_3.ogg" type="AudioStream" id=7]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_8.ogg" type="AudioStream" id=8]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_5.ogg" type="AudioStream" id=9]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_7.ogg" type="AudioStream" id=10]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_9.ogg" type="AudioStream" id=11]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_6.ogg" type="AudioStream" id=12]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_4.ogg" type="AudioStream" id=13]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_15.ogg" type="AudioStream" id=14]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_12.ogg" type="AudioStream" id=15]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_14.ogg" type="AudioStream" id=16]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_22.ogg" type="AudioStream" id=17]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_16.ogg" type="AudioStream" id=18]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_17.ogg" type="AudioStream" id=19]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_21.ogg" type="AudioStream" id=20]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_19.ogg" type="AudioStream" id=21]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_20.ogg" type="AudioStream" id=22]
+[ext_resource path="res://asset/sound_sample/white_key_sounds/wk_18.ogg" type="AudioStream" id=23]
+[ext_resource path="res://asset/sprites/piano_simulator_title.png" type="Texture" id=24]
+[ext_resource path="res://asset/sound_sample/black_key_sounds/bk_4.ogg" type="AudioStream" id=25]
+[ext_resource path="res://asset/sound_sample/black_key_sounds/bk_7.ogg" type="AudioStream" id=26]
+[ext_resource path="res://asset/sound_sample/black_key_sounds/bk_1.ogg" type="AudioStream" id=27]
+[ext_resource path="res://asset/sound_sample/black_key_sounds/bk_3.ogg" type="AudioStream" id=28]
+[ext_resource path="res://asset/sound_sample/black_key_sounds/bk_2.ogg" type="AudioStream" id=29]
+[ext_resource path="res://asset/sound_sample/black_key_sounds/bk_10.ogg" type="AudioStream" id=30]
+[ext_resource path="res://asset/sound_sample/black_key_sounds/bk_9.ogg" type="AudioStream" id=31]
+[ext_resource path="res://asset/sound_sample/black_key_sounds/bk_14.ogg" type="AudioStream" id=32]
+[ext_resource path="res://asset/sound_sample/black_key_sounds/bk_11.ogg" type="AudioStream" id=33]
+[ext_resource path="res://asset/sound_sample/black_key_sounds/bk_12.ogg" type="AudioStream" id=34]
+[ext_resource path="res://asset/sound_sample/black_key_sounds/bk_5.ogg" type="AudioStream" id=35]
+[ext_resource path="res://asset/sound_sample/black_key_sounds/bk_13.ogg" type="AudioStream" id=36]
+[ext_resource path="res://asset/sound_sample/black_key_sounds/bk_15.ogg" type="AudioStream" id=37]
+[ext_resource path="res://asset/sound_sample/black_key_sounds/bk_6.ogg" type="AudioStream" id=38]
+[ext_resource path="res://asset/sound_sample/black_key_sounds/bk_8.ogg" type="AudioStream" id=39]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.172549, 0.458824, 0.682353, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.0745098, 0.211765, 0.32549, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.835294, 0.835294, 0.835294, 1 )
+border_width_left = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.266667, 0.690196, 0.772549, 1 )
+border_width_left = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.956863, 0.956863, 0.956863, 1 )
+border_width_left = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.0588235, 0.0588235, 0.0588235, 1 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.0588235, 0.14902, 0.192157, 1 )
+
+[sub_resource type="Environment" id=8]
+background_mode = 4
+glow_enabled = true
+glow_levels/1 = true
+glow_levels/2 = true
+glow_levels/4 = true
+glow_levels/5 = false
+glow_bicubic_upscale = true
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="PanelBG" type="Panel" parent="."]
+margin_right = 1025.0
+margin_bottom = 600.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="piano_simulator_title" type="Sprite" parent="PanelBG"]
+position = Vector2( 520, 44.4882 )
+texture = ExtResource( 24 )
+
+[node name="PianoPanel" type="Panel" parent="."]
+margin_top = 435.0
+margin_right = 1025.0
+margin_bottom = 575.0
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( -80, 485 )
+__meta__ = {
+"_gizmo_extents_": 68.2
+}
+
+[node name="white_key_conts" type="Node2D" parent="."]
+position = Vector2( 75, 435 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="white_key_1" type="Button" parent="white_key_conts"]
+margin_top = -3.05176e-05
+margin_right = 40.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_2" type="Button" parent="white_key_conts"]
+margin_left = 40.0
+margin_top = -3.05176e-05
+margin_right = 80.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_3" type="Button" parent="white_key_conts"]
+margin_left = 80.0
+margin_top = -3.05176e-05
+margin_right = 120.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_4" type="Button" parent="white_key_conts"]
+margin_left = 120.0
+margin_top = -2.18279e-11
+margin_right = 160.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_5" type="Button" parent="white_key_conts"]
+margin_left = 160.0
+margin_top = -2.18279e-11
+margin_right = 200.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_6" type="Button" parent="white_key_conts"]
+margin_left = 200.0
+margin_top = -3.05176e-05
+margin_right = 240.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_7" type="Button" parent="white_key_conts"]
+margin_left = 240.0
+margin_top = -3.05176e-05
+margin_right = 280.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_8" type="Button" parent="white_key_conts"]
+margin_left = 280.0
+margin_top = -2.18279e-11
+margin_right = 320.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_9" type="Button" parent="white_key_conts"]
+margin_left = 320.0
+margin_top = -2.18279e-11
+margin_right = 360.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_10" type="Button" parent="white_key_conts"]
+margin_left = 360.0
+margin_top = -2.18279e-11
+margin_right = 400.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_11" type="Button" parent="white_key_conts"]
+margin_left = 400.0
+margin_top = 3.05176e-05
+margin_right = 440.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_12" type="Button" parent="white_key_conts"]
+margin_left = 440.0
+margin_top = 3.05176e-05
+margin_right = 480.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_13" type="Button" parent="white_key_conts"]
+margin_left = 480.0
+margin_top = -2.18279e-11
+margin_right = 520.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_14" type="Button" parent="white_key_conts"]
+margin_left = 520.0
+margin_top = -2.18279e-11
+margin_right = 560.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_15" type="Button" parent="white_key_conts"]
+margin_left = 560.0
+margin_top = -3.05176e-05
+margin_right = 600.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_16" type="Button" parent="white_key_conts"]
+margin_left = 600.0
+margin_top = -3.05176e-05
+margin_right = 640.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_17" type="Button" parent="white_key_conts"]
+margin_left = 640.0
+margin_top = -3.05176e-05
+margin_right = 680.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_18" type="Button" parent="white_key_conts"]
+margin_left = 680.0
+margin_top = -2.18279e-11
+margin_right = 720.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_19" type="Button" parent="white_key_conts"]
+margin_left = 720.0
+margin_top = -2.18279e-11
+margin_right = 760.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_20" type="Button" parent="white_key_conts"]
+margin_left = 760.0
+margin_top = -3.05176e-05
+margin_right = 800.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_21" type="Button" parent="white_key_conts"]
+margin_left = 800.0
+margin_top = 3.05176e-05
+margin_right = 840.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="white_key_22" type="Button" parent="white_key_conts"]
+margin_left = 840.0
+margin_top = -3.05176e-05
+margin_right = 880.0
+margin_bottom = 123.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="black_key_conts" type="Node2D" parent="."]
+position = Vector2( 75, 435 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="black_key_1" type="Button" parent="black_key_conts"]
+margin_left = 25.0
+margin_right = 55.0
+margin_bottom = 78.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="black_key_2" type="Button" parent="black_key_conts"]
+margin_left = 65.0
+margin_right = 95.0
+margin_bottom = 78.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="black_key_3" type="Button" parent="black_key_conts"]
+margin_left = 105.0
+margin_top = -3.05176e-05
+margin_right = 135.0
+margin_bottom = 78.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="black_key_4" type="Button" parent="black_key_conts"]
+margin_left = 185.0
+margin_top = -2.18279e-11
+margin_right = 215.0
+margin_bottom = 78.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="black_key_5" type="Button" parent="black_key_conts"]
+margin_left = 225.0
+margin_top = -3.05176e-05
+margin_right = 255.0
+margin_bottom = 78.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="black_key_6" type="Button" parent="black_key_conts"]
+margin_left = 305.0
+margin_top = 3.05176e-05
+margin_right = 335.0
+margin_bottom = 78.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="black_key_7" type="Button" parent="black_key_conts"]
+margin_left = 345.0
+margin_top = 3.05176e-05
+margin_right = 375.0
+margin_bottom = 78.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="black_key_8" type="Button" parent="black_key_conts"]
+margin_left = 385.0
+margin_top = -2.18279e-11
+margin_right = 415.0
+margin_bottom = 78.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="black_key_9" type="Button" parent="black_key_conts"]
+margin_left = 465.0
+margin_top = 3.05176e-05
+margin_right = 495.0
+margin_bottom = 78.0001
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="black_key_10" type="Button" parent="black_key_conts"]
+margin_left = 505.0
+margin_top = -2.18279e-11
+margin_right = 535.0
+margin_bottom = 78.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="black_key_11" type="Button" parent="black_key_conts"]
+margin_left = 585.0
+margin_right = 615.0
+margin_bottom = 78.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="black_key_12" type="Button" parent="black_key_conts"]
+margin_left = 625.0
+margin_right = 655.0
+margin_bottom = 78.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="black_key_13" type="Button" parent="black_key_conts"]
+margin_left = 665.0
+margin_top = -3.05176e-05
+margin_right = 695.0
+margin_bottom = 78.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="black_key_14" type="Button" parent="black_key_conts"]
+margin_left = 745.0
+margin_top = 6.10352e-05
+margin_right = 775.0
+margin_bottom = 78.0001
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="black_key_15" type="Button" parent="black_key_conts"]
+margin_left = 785.0
+margin_top = 3.05176e-05
+margin_right = 815.0
+margin_bottom = 78.0001
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="audio_player" type="Node" parent="."]
+
+[node name="white_key_sounds" type="Node" parent="audio_player"]
+
+[node name="wk_1" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 1 )
+
+[node name="wk_2" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 2 )
+
+[node name="wk_3" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 7 )
+
+[node name="wk_4" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 13 )
+
+[node name="wk_5" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 9 )
+
+[node name="wk_6" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 12 )
+
+[node name="wk_7" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 10 )
+
+[node name="wk_8" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 8 )
+
+[node name="wk_9" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 11 )
+
+[node name="wk_10" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 5 )
+
+[node name="wk_11" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 6 )
+
+[node name="wk_12" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 15 )
+
+[node name="wk_13" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 3 )
+
+[node name="wk_14" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 16 )
+
+[node name="wk_15" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 14 )
+
+[node name="wk_16" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 18 )
+
+[node name="wk_17" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 19 )
+
+[node name="wk_18" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 23 )
+
+[node name="wk_19" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 21 )
+
+[node name="wk_20" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 22 )
+
+[node name="wk_21" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 20 )
+
+[node name="wk_22" type="AudioStreamPlayer" parent="audio_player/white_key_sounds"]
+stream = ExtResource( 17 )
+
+[node name="black_key_sounds" type="Node" parent="audio_player"]
+
+[node name="bk_1" type="AudioStreamPlayer" parent="audio_player/black_key_sounds"]
+stream = ExtResource( 27 )
+
+[node name="bk_2" type="AudioStreamPlayer" parent="audio_player/black_key_sounds"]
+stream = ExtResource( 29 )
+
+[node name="bk_3" type="AudioStreamPlayer" parent="audio_player/black_key_sounds"]
+stream = ExtResource( 28 )
+
+[node name="bk_4" type="AudioStreamPlayer" parent="audio_player/black_key_sounds"]
+stream = ExtResource( 25 )
+
+[node name="bk_5" type="AudioStreamPlayer" parent="audio_player/black_key_sounds"]
+stream = ExtResource( 35 )
+
+[node name="bk_6" type="AudioStreamPlayer" parent="audio_player/black_key_sounds"]
+stream = ExtResource( 38 )
+
+[node name="bk_7" type="AudioStreamPlayer" parent="audio_player/black_key_sounds"]
+stream = ExtResource( 26 )
+
+[node name="bk_8" type="AudioStreamPlayer" parent="audio_player/black_key_sounds"]
+stream = ExtResource( 39 )
+
+[node name="bk_9" type="AudioStreamPlayer" parent="audio_player/black_key_sounds"]
+stream = ExtResource( 31 )
+
+[node name="bk_10" type="AudioStreamPlayer" parent="audio_player/black_key_sounds"]
+stream = ExtResource( 30 )
+
+[node name="bk_11" type="AudioStreamPlayer" parent="audio_player/black_key_sounds"]
+stream = ExtResource( 33 )
+
+[node name="bk_12" type="AudioStreamPlayer" parent="audio_player/black_key_sounds"]
+stream = ExtResource( 34 )
+
+[node name="bk_13" type="AudioStreamPlayer" parent="audio_player/black_key_sounds"]
+stream = ExtResource( 36 )
+
+[node name="bk_14" type="AudioStreamPlayer" parent="audio_player/black_key_sounds"]
+stream = ExtResource( 32 )
+
+[node name="bk_15" type="AudioStreamPlayer" parent="audio_player/black_key_sounds"]
+stream = ExtResource( 37 )
+
+[node name="C3" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 245.757
+margin_top = 534.799
+margin_right = 260.757
+margin_bottom = 548.799
+text = "C3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="C4" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 529.964
+margin_top = 534.799
+margin_right = 544.964
+margin_bottom = 548.799
+text = "C4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="C5" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 808.773
+margin_top = 534.799
+margin_right = 823.773
+margin_bottom = 548.799
+text = "C5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 8 )
+
+[connection signal="pressed" from="white_key_conts/white_key_1" to="." method="_on_white_key_1_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_2" to="." method="_on_white_key_2_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_3" to="." method="_on_white_key_3_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_4" to="." method="_on_white_key_4_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_5" to="." method="_on_white_key_5_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_6" to="." method="_on_white_key_6_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_7" to="." method="_on_white_key_7_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_8" to="." method="_on_white_key_8_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_9" to="." method="_on_white_key_9_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_10" to="." method="_on_white_key_10_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_11" to="." method="_on_white_key_11_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_12" to="." method="_on_white_key_12_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_13" to="." method="_on_white_key_13_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_14" to="." method="_on_white_key_14_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_15" to="." method="_on_white_key_15_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_16" to="." method="_on_white_key_16_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_17" to="." method="_on_white_key_17_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_18" to="." method="_on_white_key_18_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_19" to="." method="_on_white_key_19_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_20" to="." method="_on_white_key_20_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_21" to="." method="_on_white_key_21_pressed"]
+[connection signal="pressed" from="white_key_conts/white_key_22" to="." method="_on_white_key_22_pressed"]
+[connection signal="pressed" from="black_key_conts/black_key_1" to="." method="_on_black_key_1_pressed"]
+[connection signal="pressed" from="black_key_conts/black_key_2" to="." method="_on_black_key_2_pressed"]
+[connection signal="pressed" from="black_key_conts/black_key_3" to="." method="_on_black_key_3_pressed"]
+[connection signal="pressed" from="black_key_conts/black_key_4" to="." method="_on_black_key_4_pressed"]
+[connection signal="pressed" from="black_key_conts/black_key_5" to="." method="_on_black_key_5_pressed"]
+[connection signal="pressed" from="black_key_conts/black_key_6" to="." method="_on_black_key_6_pressed"]
+[connection signal="pressed" from="black_key_conts/black_key_7" to="." method="_on_black_key_7_pressed"]
+[connection signal="pressed" from="black_key_conts/black_key_8" to="." method="_on_black_key_8_pressed"]
+[connection signal="pressed" from="black_key_conts/black_key_9" to="." method="_on_black_key_9_pressed"]
+[connection signal="pressed" from="black_key_conts/black_key_10" to="." method="_on_black_key_10_pressed"]
+[connection signal="pressed" from="black_key_conts/black_key_11" to="." method="_on_black_key_11_pressed"]
+[connection signal="pressed" from="black_key_conts/black_key_12" to="." method="_on_black_key_12_pressed"]
+[connection signal="pressed" from="black_key_conts/black_key_13" to="." method="_on_black_key_13_pressed"]
+[connection signal="pressed" from="black_key_conts/black_key_14" to="." method="_on_black_key_14_pressed"]
+[connection signal="pressed" from="black_key_conts/black_key_15" to="." method="_on_black_key_15_pressed"]
